@@ -1,0 +1,21 @@
+<div class="author-container">
+  <h2>Gerenciar Autores</h2>
+
+  <form (ngSubmit)="save()" class="author-form">
+    <input type="text"
+           name="name"
+           [(ngModel)]="author.name"
+           placeholder="Nome do Autor"
+           required />
+    <button type="submit">{{ isEdit ? 'Atualizar' : 'Save' }}</button>
+    <button type="button" *ngIf="isEdit" (click)="resetForm()">Cancelar</button>
+  </form>
+
+  <ul class="author-list">
+    <li *ngFor="let a of authors">
+      {{ a.name }}
+      <button (click)="edit(a)">Editar</button>
+      <button (click)="delete(a.id!)">Excluir</button>
+    </li>
+  </ul>
+</div>

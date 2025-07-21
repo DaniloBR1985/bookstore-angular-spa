@@ -1,0 +1,31 @@
+.book-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1rem;
+
+  input, select {
+    padding: 5px;
+  }
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      margin-left: 5px;
+    }
+  }
+}

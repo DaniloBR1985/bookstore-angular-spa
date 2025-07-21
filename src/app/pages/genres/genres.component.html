@@ -1,0 +1,21 @@
+<div class="genre-container">
+  <h2>Gerenciar Gêneros</h2>
+
+  <form (ngSubmit)="save()" class="genre-form">
+    <input type="text"
+           name="name"
+           [(ngModel)]="genre.name"
+           placeholder="Nome do Gênero"
+           required />
+    <button type="submit">{{ isEdit ? 'Atualizar' : 'Salvar' }}</button>
+    <button type="button" *ngIf="isEdit" (click)="resetForm()">Cancelar</button>
+  </form>
+
+  <ul class="genre-list">
+    <li *ngFor="let g of genres">
+      {{ g.name }}
+      <button (click)="edit(g)">Editar</button>
+      <button (click)="delete(g.id!)">Excluir</button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,30 @@
+.author-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.author-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+
+  input {
+    flex: 1;
+  }
+}
+
+.author-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      margin-left: 5px;
+    }
+  }
+}
