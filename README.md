@@ -1,6 +1,22 @@
 # BookstoreApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+Esta aplicação é uma **Single Page Application (SPA)** desenvolvida em **Angular 15.2.11**, que consome uma **API com autenticação JWT** e permite realizar operações de **CRUD** para Gêneros, Autores e Livros.
+
+Passos para rodar a aplicação precisamos das versões de Node e Angular abaixo.
+**Node.js** `v16.x` ou `v18.x
+**Angular CLI** `15.2.11`
+
+Para instalar o Angular CLI (caso não tenha):
+
+```bash
+npm install -g @angular/cli@15.2.11
+npm install
+
+Editar o valor de apiUrl no environment, colocar o endereço da Api Book StoreAPI que está no projeto.
+
+Para rodar a aplicação digitar no bash
+ng serve
+ 
 
 ## Development server
 
