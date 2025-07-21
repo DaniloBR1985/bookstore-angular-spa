@@ -8,11 +8,11 @@ Passos para rodar a aplicação precisamos das versões de Node e Angular abaixo
 
 Para instalar o Angular CLI (caso não tenha):
 
-```bash
+bash
 npm install -g @angular/cli@15.2.11
 npm install
 
-Editar o valor de apiUrl no environment, colocar o endereço da Api Book StoreAPI que está no projeto.
+Editar o valor de apiUrl no environment, colocar o endereço da Api Book StoreAPI, o projeto dessa api está no repositorio https://github.com/DaniloBR1985/bookstore-api .
 
 Para rodar a aplicação digitar no bash
 ng serve
